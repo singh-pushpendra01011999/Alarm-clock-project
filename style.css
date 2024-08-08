@@ -1,0 +1,115 @@
+body,html{
+ 
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 62, 255);
+}
+
+
+.clock{
+/* justify-content: center; */
+border: 2px solid black;
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap:10px;
+justify-content: center;
+align-items: center;
+border-radius: 35px;
+background-color: #b1b0f5;
+/* position: relative; */
+height: 500px;
+}
+
+.set-time{
+  display: flex;
+  gap: 5px;
+  
+}
+
+.disabled{
+opacity: 0.6;
+pointer-events: none;
+
+}
+
+.set-alarm-btn button{
+  background-color: rgb(2, 5, 221);
+  border-radius: 5px;
+  width: 42vh;
+  color: aliceblue;
+  border: 3px solid black;
+  font-weight: 800;
+}
+
+.time-zone select{
+  font-size: 18px;
+  padding: 5px;
+  
+}
+
+.hour select{
+  font-size: 18px;
+  padding: 5px;
+}
+
+.minute select{
+  font-size: 18px;
+  padding: 5px;
+}
+
+.stop-alarm-btn{
+  display: none;
+}
+
+.alarm-list h4 {
+text-align: center;
+font-size: 30px;
+text-shadow: 2px 2px 4px #888888;
+}
+
+/* ............. */
+#my-list li {
+  display: flex;
+  justify-content: space-between; /* Space out the contents */
+  align-items: center; /* Align items vertically centered */
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #fafafa;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  color: #333;
+}
+li{
+  height: 20px;
+  width: 200px;
+  background-color: rgb(129, 159, 204);
+  gap: 5px;
+  margin: 2px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+li button{
+  padding: 8px 12px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #3498db; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #2980b9; /* Darker blue color */
+}
